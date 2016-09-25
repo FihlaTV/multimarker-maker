@@ -19,7 +19,7 @@ var downloadAll = function() {
 
 var preload = function(game) {
   for (var i = 0; i < 63; i++) {
-    game.load.image(i, 'img/barcodes/' + i +'.png');
+    game.load.image(i, 'img/barcode-markers/' + i +'.png');
   }
 };
 
