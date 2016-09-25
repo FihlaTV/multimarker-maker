@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --content-base build/",
+    "build": "webpack -p --config webpack.production.config.js --content-base build/ ",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Eric Lawrence",
