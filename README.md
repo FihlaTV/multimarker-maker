@@ -10,10 +10,9 @@ Multimarkers are a dependable Augmented Reality target but can be a bit clumsy t
 
 
 ## Usage instructions.
-Use the pre-built demo available on the [ar2go](http://ar2go.squaretone.com/multimarker-maker) site or
+Use the pre-built demo available on the [ar2go](http://ar2go.squaretone.com/multimarker-maker) site or:
 
-
-- Clone or download this repository
+- clone or download this repository
 - run `npm install` from the downloaded folder
-- run `npm start` to spin up a local webserver
-- visit http://localhost:8080 in your browser
+- run `npm start` to spin up a local web server
+- visit [http://localhost:8080](http://localhost:8080) in your browser
