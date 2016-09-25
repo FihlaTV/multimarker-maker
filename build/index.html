@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Example Multimarker Maker</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" integrity="sha256-AIodEDkC8V/bHBkfyxzolUMw57jeQ9CauwhVW6YJ9CA=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/example.css" />
+
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="intro row">
+        <div class="col-xs-12">
+          <h1>Multimarker Maker</h1>
+          <p>
+            Craft custom <a href="https://artoolkit.org/documentation/doku.php?id=3_Marker_Training:marker_multi">ARToolkit</a>-compatible multimarkers.
+          </p>
+          <ul>
+            <li>Drag to reposition.</li>
+            <li>Double-tap to delete individual markers.</li>
+            <li>Click the download button to generate a printable PDF and .dat file.</li>
+          </ul>
+        </div>
+      </div>
+      <form class="row">
+        <div class="form-group col-xs-3">
+          <select class="form-control" id="markerAddition">
+            <option>-- Add Marker --</option>
+          </select>
+        </div>
+
+        <div class="form-group col-xs-9">
+          <div class="btn-group" role="group" aria-label="Actions">
+            <a class="clear-btn btn btn-danger" href="#" role="button"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span> Clear</a>
+            <a class="print-btn btn btn-primary" href="#" role="button"><span class="glyphicon glyphicon-cloud-download" aria-hidden="true"></span> Download marker and .dat</a>
+          </div>
+          &nbsp;
+          <a class="print-btn btn btn-default" href="https://github.com/squaretone/multimarker-maker" role="button"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
+
+        </div>
+      </form>
+      <div id="board"></div>
+
+
+    </div><!-- /.container -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2014-11-29/FileSaver.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/phaser/2.6.2/phaser.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.2.61/jspdf.min.js"></script>
+    <script src="assets/bundle.js"></script>
+  </body>
+</html>

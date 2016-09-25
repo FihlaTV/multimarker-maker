@@ -1,0 +1,19 @@
+{
+  "name": "multimarker-maker",
+  "version": "1.0.0",
+  "description": "Generate ARToolkit-compatible multimarkers",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --content-base build/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eric Lawrence",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.16.1"
+  },
+  "devDependencies": {
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.1"
+  }
+}
